@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aerofret-kinetic"
+version = "2.0.0"
+authors = [
+  { name="Mahmoud Labib", email="contact@aerofret.org" },
+]
+description = "A Transdisciplinary Framework for Zero-Haptic Touchless Air Guitar & Augmented Reality Performance"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+]
+dependencies = [
+    "opencv-python>=4.8.0",
+    "mediapipe>=0.10.14",
+    "numpy>=1.24.0",
+    "pygame>=2.5.0",
+    "sounddevice>=0.4.6",
+    "customtkinter>=5.2.0"
+]
+
+[project.scripts]
+aerofret = "launcher:AeroFretLauncher"
+aerofret-game = "main:app.run"
+aerofret-doctor = "tools.doctor:run_doctor"
+
+[project.urls]
+"Homepage" = "https://github.com/mahmoud-labib/aerofret-kinetic"
+"Documentation" = "https://github.com/mahmoud-labib/aerofret-kinetic/blob/main/DOCUMENTATION.md"

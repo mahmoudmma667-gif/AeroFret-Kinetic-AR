@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.qodo/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+*.egg
+*.spec
+
+# Testing & Debug
+scratch/
+*.log
+
+# Ensure all assets are preserved
+!assets/
+!assets/**
+
