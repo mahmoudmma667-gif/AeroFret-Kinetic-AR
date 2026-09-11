@@ -236,26 +236,26 @@ Where $G_{\text{drive}} \in [1.0, 5.0]$ maps directly to the user's selected pow
 ### 3. Continuous Swept-Line Collision Detection (Swept Ray Intersection)
 To eliminate "tunneling" (where a fast hand strum crosses an entire string between two video frames without detection), AeroFret uses a swept ray-segment intersection model:
 
-Let $\vec{P}_0 = (x_0, y_0)$ and $\vec{P}_1 = (x_1, y_1)$ be the index fingertip positions at frame $t-1$ and $t$.  
-Let $\vec{S}_0$ and $\vec{S}_1$ be the endpoints of the target guitar string.  
+Let $\mathbf{P}_0 = (x_0, y_0)$ and $\mathbf{P}_1 = (x_1, y_1)$ be the index fingertip positions at frame $t-1$ and $t$.  
+Let $\mathbf{S}_0$ and $\mathbf{S}_1$ be the endpoints of the target guitar string.  
 The intersection parameter $t^* \in [0, 1]$ is solved analytically via 2D vector cross-products:
 
-$$t^* = \frac{(\vec{S}_1 - \vec{S}_0) \times (\vec{P}_0 - \vec{S}_0)}{(\vec{P}_1 - \vec{P}_0) \times (\vec{S}_1 - \vec{S}_0)}$$
+$$t^* = \frac{(\mathbf{S}_1 - \mathbf{S}_0) \times (\mathbf{P}_0 - \mathbf{S}_0)}{(\mathbf{P}_1 - \mathbf{P}_0) \times (\mathbf{S}_1 - \mathbf{S}_0)}$$
 
 If $0 \le t^* \le 1$ and the corresponding string parameter $s^* \in [0, 1]$, a collision is registered deterministically, and the pluck velocity is computed as:
 
-$$v_{\text{pluck}} = \frac{\|\vec{P}_1 - \vec{P}_0\|}{\Delta t}$$
+$$v_{\text{pluck}} = \frac{\|\mathbf{P}_1 - \mathbf{P}_0\|}{\Delta t}$$
 
 ---
 
 ### 4. Kinematic Velocity-Adaptive Exponential Moving Average (EMA)
 To eliminate camera sensor jitter while preserving instantaneous response during rapid shredding ($>3000\text{ px/s}$), the spatial smoothing coefficient $\alpha_k$ adapts dynamically to instantaneous finger velocity:
 
-$$\alpha_k = \alpha_{\text{min}} + (\alpha_{\text{max}} - \alpha_{\text{min}}) \cdot \frac{\|\vec{v}_k\|}{\|\vec{v}_k\| + v_{\text{threshold}}}$$
+$$\alpha_k = \alpha_{\text{min}} + (\alpha_{\text{max}} - \alpha_{\text{min}}) \cdot \frac{\|\mathbf{v}_k\|}{\|\mathbf{v}_k\| + v_{\text{threshold}}}$$
 
 $$\hat{x}_k = \alpha_k x_k + (1 - \alpha_k) \hat{x}_{k-1}$$
 
-During subtle posture holding ($\|\vec{v}_k\| \approx 0$), $\alpha_k \rightarrow \alpha_{\text{min}} = 0.35$ for zero jitter. During high-speed plucks, $\alpha_k \rightarrow \alpha_{\text{max}} = 0.95$ for zero lag.
+During subtle posture holding ($\|\mathbf{v}_k\| \approx 0$), $\alpha_k \rightarrow \alpha_{\text{min}} = 0.35$ for zero jitter. During high-speed plucks, $\alpha_k \rightarrow \alpha_{\text{max}} = 0.95$ for zero lag.
 
 ---
 
