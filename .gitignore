@@ -34,7 +34,15 @@ build/
 scratch/
 *.log
 
+# Private deployment scripts & Agent internals
+*push*.bat
+*رفع*.bat
+.agents/
+.gemini/
+*.token
+
 # Ensure all assets are preserved
 !assets/
 !assets/**
+
 

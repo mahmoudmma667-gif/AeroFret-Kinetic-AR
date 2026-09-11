@@ -1,27 +1,46 @@
-MIT License
-
-Copyright (c) 2026 Mahmoud Labib
+AEROFRET OPEN RESEARCH & ACADEMIC ATTRIBUTION LICENSE (v2.0)
+==============================================================================
+Copyright (c) 2026 Mahmoud Labib. All Rights Reserved.
+Project: AR Guitar AeroFret: Kinetic (Touchless Spatial Air Guitar Simulator)
+Principal Architect & Author: Mahmoud Labib
+==============================================================================
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software, source code, mathematical formulations, models, and associated
+documentation files (the "Software"), to inspect, run, study, research, teach,
+and build upon the Software, subject to the following MANDATORY CONDITIONS:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. STRICT MANDATORY AUTHOR ATTRIBUTION:
+   Any academic paper, thesis, conference presentation, commercial deployment,
+   public demonstration, video broadcast, fork, or derivative work derived from
+   or utilizing this Software (in whole or in part) MUST prominently and visibly
+   cite and display the original inventor and architect:
+   
+   "AR Guitar AeroFret: Kinetic — Conceived, Theorized, and Architected 
+    by Mahmoud Labib (Transdisciplinary Researcher in HCI, HCT, HCC, and STS)"
+   Official Repository: https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR
 
-ACADEMIC & RESEARCH ATTRIBUTION:
-Any academic, commercial, or public distribution, publication, or deployment
-derived from or utilizing AeroFret: Kinetic shall maintain prominent attribution
-to the original author and principal investigator:
-Mahmoud Labib (Transdisciplinary Researcher in HCI, HCT, HCC, and STS).
+2. ANTI-PLAGIARISM & PRESERVATION OF MORAL RIGHTS:
+   No person, university student, researcher, institution, or corporation may:
+   a) Strip, modify, or obscure the name "Mahmoud Labib" or original author notices.
+   b) Present, submit, or register this Software, its algorithms, or its 
+      transdisciplinary framework (HCI/HCT/HCC/STS) as their own original work.
+   c) Claim sole inventorship or copyright over the novel spatial gesture-to-acoustic
+      continuous collision detection (CCD) and Karplus-Strong procedural synthesis chain.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. ACADEMIC & RESEARCH REPRODUCTION CITATION:
+   If this work is referenced or incorporated in coursework, academic degree 
+   theses (B.Sc., M.Sc., Ph.D.), or peer-reviewed publications, the following 
+   formal citation MUST be included in the bibliography:
+   
+   Labib, M. (2026). "AR Guitar AeroFret: Kinetic: A Transdisciplinary Framework 
+   for Zero-Haptic Touchless Air Guitar & Augmented Reality Performance." 
+   GitHub: https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR
+
+4. WARRANTY & LIABILITY DISCLAIMER:
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. IN NO EVENT 
+   SHALL THE AUTHOR OR COPYRIGHT HOLDER (MAHMOUD LABIB) BE LIABLE FOR ANY CLAIM, 
+   DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OR MISUSE OF THIS SOFTWARE.
+==============================================================================
