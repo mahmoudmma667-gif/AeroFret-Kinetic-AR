@@ -11,12 +11,12 @@ echo.
 echo [INFO] Ready to push to your GitHub repository.
 echo.
 
-set /p REPO_URL="Enter your GitHub Repository URL (e.g. https://github.com/username/repo): "
+set DEFAULT_URL=https://github.com/mahmoudmma667-gif/-..git
+echo [DEFAULT] %DEFAULT_URL%
+set /p REPO_URL="Enter your GitHub Repository URL (or press ENTER to use default): "
 
 if "%REPO_URL%"=="" (
-    echo [ERROR] No URL provided. Aborting.
-    pause
-    exit /b 1
+    set REPO_URL=%DEFAULT_URL%
 )
 
 echo.

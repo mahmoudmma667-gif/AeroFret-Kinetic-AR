@@ -33,5 +33,5 @@ aerofret-game = "main:app.run"
 aerofret-doctor = "tools.doctor:run_doctor"
 
 [project.urls]
-"Homepage" = "https://github.com/mahmoud-labib/aerofret-kinetic"
-"Documentation" = "https://github.com/mahmoud-labib/aerofret-kinetic/blob/main/DOCUMENTATION.md"
+"Homepage" = "https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR"
+"Documentation" = "https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR/blob/main/DOCUMENTATION.md"

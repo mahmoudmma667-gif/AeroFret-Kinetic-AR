@@ -8,14 +8,13 @@ echo      أداة رفع مشروع AR AeroFret: Kinetic إلى جيت هاب �
 echo      المطور والمهندس: محمود لبيب (Mahmoud Labib)
 echo ================================================================
 echo.
-echo كل ملفات المشروع والتوثيق والصور والفيديو جاهزة ومحفوظة بالكامل!
+set DEFAULT_URL=https://github.com/mahmoudmma667-gif/-..git
+echo [الرابط الافتراضي الجاهز]: %DEFAULT_URL%
 echo.
-set /p REPO_URL="انسخ رابط المستودع من شريط المتصفح والصقه هنا ثم اضغط Enter: "
+set /p REPO_URL="اضغط Enter فوراً للمتابعة بالرابط أعلاه (أو الصق رابط جديد): "
 
 if "%REPO_URL%"=="" (
-    echo [خطأ] لم يتم إدخال رابط المستودع. تم إلغاء العملية.
-    pause
-    exit /b 1
+    set REPO_URL=%DEFAULT_URL%
 )
 
 echo.

@@ -267,7 +267,7 @@ Double-click either of the pre-configured launcher scripts in the repository roo
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/mahmoud-labib/AeroFret-Kinetic-AR.git
+git clone https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR.git
 cd AeroFret-Kinetic-AR
 ```
 
@@ -383,7 +383,7 @@ If you use **AeroFret: Kinetic** in your academic research, university coursewor
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
-  howpublished = {\url{https://github.com/mahmoud-labib/AeroFret-Kinetic-AR}},
+  howpublished = {\url{https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR}},
   version      = {2.0.0},
   keywords     = {HCI, Spatial Computing, Augmented Reality, Karplus-Strong, MediaPipe, Computer Vision, Air Guitar}
 }

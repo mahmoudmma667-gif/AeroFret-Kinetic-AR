@@ -48,8 +48,8 @@ If you simply want to play, practice, or explore the software, **you do NOT need
 
 ```bash
 # 1. Clone or download the repository
-git clone https://github.com/mahmoud-labib/aerofret-kinetic.git
-cd aerofret-kinetic
+git clone https://github.com/mahmoudmma667-gif/AeroFret-Kinetic-AR.git
+cd AeroFret-Kinetic-AR
 
 # 2. Install required dependencies
 pip install -r requirements.txt
